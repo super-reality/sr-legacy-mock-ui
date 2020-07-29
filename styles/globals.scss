@@ -1,9 +1,11 @@
-@import "../fonts/inter-web/inter.css";
+@import "variables";
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 html,
@@ -12,17 +14,34 @@ body {
 }
 
 html {
-  font-size: 16px;
+  font-size: $root-font-size;
 }
 
 body {
   margin: 0;
-  line-height: 1.5;
+  line-height: $root-line-height;
   font-size: 1rem;
-  font-family: "Inter",
-               -apple-system, BlinkMacSystemFont, Segoe UI,
-               Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-               Helvetica Neue, sans-serif;
-  background-color: #212121;
-  color: #9E9E9E;
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+a {
+  font-weight: $link-weight;
+  color: $link-color;
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(#000, 0.25);
+}
+
+::selection {
+  background-color: $primary-accent-color;
+  color: #fff;
 }

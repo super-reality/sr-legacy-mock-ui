@@ -1,6 +1,7 @@
 import React from "react";
+import "../fonts/inter-web/inter.css";
 import "../styles/globals.scss";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }) {
     return (

@@ -1,12 +1,12 @@
 import React, {Fragment} from "react";
 import Head from "next/head"
 
-export default function Home() {
+export default function Classroom() {
     return (
         <Fragment>
             <Head>
-                <title>Open World</title>
+                <title>Classroom - Open World</title>
             </Head>
         </Fragment>
-    )
+    );
 }
