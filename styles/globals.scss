@@ -1,5 +1,13 @@
 @import "variables";
 
+%block-element {
+  margin: 0 0 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -30,6 +38,12 @@ a {
   font-weight: $link-weight;
   color: $link-color;
   cursor: default;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+  @extend %block-element;
 }
 
 ::-webkit-scrollbar {
